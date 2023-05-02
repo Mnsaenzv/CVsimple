@@ -1,0 +1,323 @@
+*{
+    margin: auto;
+    padding: 0;
+}
+nav{
+    background-color: #DE3E48
+    
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  li{
+    background: #000000;
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+    width: 120px;
+
+  }
+  
+  li a {
+   
+    text-decoration: none;
+    color: #f0efef;
+  }
+li a:hover{
+    color: rgb(0, 255, 251);
+}
+  
+
+ h1{
+     text-align: center;
+ }
+ .contentedorpagina{
+  justify-content: center;
+
+  
+ }
+ .contenedortextoimagen{
+    justify-content: center;
+    width: 80%;
+    display: flex;
+ 
+
+
+ }
+ .cajatexto{
+    background-color: #e6bfc1;
+    width: 70%;
+    height: 260px;
+    padding: 20px;
+    box-sizing: border-box;
+    mix-blend-mode: hard-light;
+border: 3px solid #000000;
+border-radius: 27px;
+ }
+ .texto{
+    font-family:'Courier New';
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 17px;
+    color: black
+ }
+footer{
+    background: #DE3E48;
+    height: 10%;
+    width: 100%;
+    bottom: 0px;
+    position:fixed;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+.foto{
+    width: 272px;
+    height: 260px;
+    left: 52px;
+    top: 261px;
+    border-radius: 72px;
+    padding: 25px;
+    border: 1px solid #000000;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.subtitulos{
+    margin-left: 100px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.titulo{
+    color:#DE3E48;
+    font-size:xxx-large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align:center;
+    padding: 20px; 
+}
+
+.textodos{
+    color: #DE3E48;
+    font-size:xx-large;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+    text-align:center;
+    padding: 15px; 
+}
+.textotres{
+    font-family:'Rambla';
+    font-weight:normal;
+    font-size: 20px;
+    line-height: 17px;
+}
+
+.header{
+  align-items: center;
+  justify-content: center;
+}
+
+/* Pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    header {
+      font-size: 15px;
+      display:flex;
+      flex-direction:column;
+      }
+  
+    nav{
+     background-color: rgb(0, 0, 0);
+    }
+    .contenedorpagina {
+      font-size: 16px;
+    }
+  
+    .foto {
+      width: 200px;
+      height: 200px;
+      flex-wrap: wrap;
+    }
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    input:checked  ~ ul{   
+        display:block;
+          }
+      
+          input:checked ~ label {  
+          background: #cdbddaee; 
+              }
+      
+          label:hover{               
+          background: rgb(255, 255, 255);
+          }
+      
+        li{                         
+             margin: 0px;
+             text-align: left;
+             background: #DE3E48;
+         }
+      
+         label {                     
+           box-sizing: border-box;
+           display: block;
+           border: 1px solid rgb(244, 237, 237);
+           border-radius: 5px;
+           width: 30px;
+           height: 30px;
+           line-height: 30px;
+           font-weight: bold;
+           text-align:center;
+           user-select: none;
+           background-color: #cdbddaee;
+      
+            }
+          
+      
+        ul{                      
+           display: none;
+           background-color:rgb(0, 0, 0);
+      
+          }   
+
+          .cajatexto{
+            flex-wrap: wrap;
+          }
+          .titulo{
+            flex-wrap: wrap;    
+          }
+        body{
+          background-size: 80vh;
+          background-repeat: no-repeat;
+          background-color: #000000;
+        }
+
+        .contenedortextoimagen{
+          display:flex;
+          justify-content:center;
+          flex-wrap: wrap; 
+          padding: 1%;
+          padding-bottom: 20%;
+        }
+  }
+  
+  /* Pantallas medianas */
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    header {
+      font-size: 20px;
+    }
+  
+    .contenedorpagina {
+      font-size: 20px;
+    }
+  
+    .foto {
+      width: 250px;
+      height: 250px;
+    }
+    main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    input:checked  ~ ul{   
+        display:block;
+          }
+      
+          input:checked ~ label {  
+          background: #cdbddaee; 
+              }
+      
+          label:hover{               
+          background: rgb(255, 255, 255);
+          }
+      
+        li{                         
+             margin: 0px;
+             text-align: left;
+         }
+      
+         label {                     
+           box-sizing: border-box;
+           display: block;
+           border: 1px solid rgb(200, 6, 6);
+           border-radius: 5px;
+           width: 30px;
+           height: 30px;
+           line-height: 30px;
+           font-weight: bold;
+           text-align:center;
+           user-select: none;
+           background-color: #cdbddaee;
+      
+            }
+          
+      
+        ul{                      
+           display: none;
+           background-color:rgb(0, 0, 0);
+      
+          }   
+      
+      
+      
+  }
+  
+  /* Pantallas grandes */
+  @media screen and (min-width: 1025px) {
+    header{
+      font-size: 20px;
+    }
+  
+    .contenedorpagina {
+      font-size: 25px;
+    }
+  
+    .foto {
+      width: 300px;
+      height: 300px;
+    }
+    main {
+        display:flexbox;
+        flex-wrap: wrap;
+    }
+    .cajatexto{
+        background-color: #e6bfc1;
+        width: 100%;
+        height: 260px;
+        padding: 20px;
+        box-sizing: border-box;
+        mix-blend-mode: hard-light;
+    border: 3px solid #000000;
+    border-radius: 27px;
+}
+input {                        /*no muestra el botón de menu */
+    display: none;     
+  }
+  label {                       /*no muestra la etiqueta ☰ */
+      display:none;
+}
+}
+@media screen and (max-width: 570px){
+  .contenedorpagina {
+width: 100%;
+  }
+  .cajatexto{
+    width: 100%;
+    height: 100%;
+  }
+  .footer{
+    width: 130%;
+    height: 8%;
+    padding: 5%;
+    font-size: medium;
+  }
+  
+  }
